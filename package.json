@@ -5,9 +5,17 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
+    "husky": "^0.14.3",
+    "lint-staged": "^5.0.0",
     "prettier": "^1.8.2"
   },
   "scripts": {
-    "prettier": "prettier --single-quote --write \"examples/*\""
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "examples/*": [
+      "prettier --single-quote --write",
+      "git add"
+    ]
   }
 }
