@@ -1,0 +1,13 @@
+{
+  "name": "talk-prettier-and-friends",
+  "repository": "https://github.com/timche/talk-prettier-and-friends",
+  "author": "Tim Cheung <tim@cheung.io>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "prettier": "^1.8.2"
+  },
+  "scripts": {
+    "prettier": "prettier --single-quote --write \"examples/*\""
+  }
+}
